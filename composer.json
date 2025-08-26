@@ -1,0 +1,36 @@
+{
+    "name": "statikbe/laravel-nova-chained-translation-manager",
+    "description": "The Laravel Nova Chained Translation Manager allows you to easily edit and customise the translations of your current Laravel environment.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "translation",
+        "chained translator",
+        "internationalization",
+        "i18n"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0|^8.1|^8.2",
+        "illuminate/validation": "^8.0|^9.0|^10.0|^11.0",
+        "laravel/nova": "^4.0",
+        "statikbe/laravel-chained-translator": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Statikbe\\NovaTranslationManager\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Statikbe\\NovaTranslationManager\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
